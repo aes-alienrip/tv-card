@@ -119,7 +119,7 @@ class TVCardServices extends LitElement {
                           <ha-icon-button
                             .action="${"source"}"
                             @click="${this.handleActionClick}"
-                            icon="mdi:video-input-hdmi"
+                            icon="mdi:import"
                             title="Source"
                           ></ha-icon-button>
                         `
@@ -150,7 +150,7 @@ class TVCardServices extends LitElement {
                           <ha-icon-button
                             .action="${"channelup"}"
                             @click="${this.handleActionClick}"
-                            icon="mdi:arrow-up"
+                            icon="mdi:arrow-up-bold"
                             title="Channelup"
                           ></ha-icon-button>
                         `
@@ -170,7 +170,7 @@ class TVCardServices extends LitElement {
                           <ha-icon-button
                             .action="${"channeldown"}"
                             @click="${this.handleActionClick}"
-                            icon="mdi:arrow-down"
+                            icon="mdi:arrow-down-bold"
                             title="Channeldown"
                           ></ha-icon-button>
                         `
