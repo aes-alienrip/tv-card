@@ -375,27 +375,26 @@ class TVCardServices extends LitElement {
       "power",
       "power_on",
       "power_off",
+      "volume_up",
+      "volume_down",
+      "volume_mute",
       "back",
-      "home",
       "source",
-      "channelup",
       "info",
+      "home",
+      "channelup",
       "channeldown",
       "up",
       "left",
       "select",
       "right",
       "down",
+      "reverse",
+      "play",
+      "forward",
       "setting",
       "channel",
       "menu"
-      "volume_mute",
-      "volume_down",
-      "volume_up",
-      "reverse",
-      "play",
-      "forward"
-
     ];
 
     if (
