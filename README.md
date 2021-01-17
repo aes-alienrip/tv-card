@@ -1,5 +1,5 @@
 # TV Remote Card
-📺 [Roku Lovelace Card](https://github.com/custom-cards/roku-card) editited by mar_robHD
+📺 [TV Remote Card](https://github.com/marrobHD/tv-card) editited by hung2kgithub
 
 [![GitHub Release][releases-shield]][releases]
 [![License][license-shield]](LICENSE.md)
