@@ -36,24 +36,25 @@ https://twitter.com/_developit/status/1090364879377260544
 | power_on | `service` | **Optional, Exclusive**| service to call when power_on button pressed. Only enabled if no `power` defined.
 | power_off | `service` | **Optional, Exclusive**| service to call when power_off button pressed. Only enabled if no `power` defined.
 | back | `service` | **Optional**| service to call when back button pressed
-| info        | `service` | **Optional**| service to call when info button pressed
 | home | `service` | **Optional**| service to call when home button pressed
-| menu | `service` | **Optional**| service to call when menu button pressed
+| source | `service` | **Optional**| service to call when source button pressed
+| channelup | `service` | **Optional**| service to call when channelup button pressed
+| channeldown | `service` | **Optional**| service to call when channeldown button pressed
+| info | `service` | **Optional**| service to call when info button pressed
 | up | `service` | **Optional**| service to call when up button pressed
 | left | `service` | **Optional**| service to call when left button pressed
 | select | `service` | **Optional**| service to call when select button pressed
 | right | `service` | **Optional**| service to call when right button pressed
 | down | `service` | **Optional**| service to call when down button pressed
-| reverse | `service` | **Optional**| service to call when reverse button pressed
-| play | `service` | **Optional**| service to call when play button pressed
-| forward | `service` | **Optional**| service to call when forward button pressed
-| source | `service` | **Optional**| service to call when source button pressed
-| channelup | `service` | **Optional**| service to call when channelup button pressed
-| channeldown | `service` | **Optional**| service to call when channeldown button pressed
+| setting | `service` | **Optional**| service to call when setting button pressed
+| channel | `service` | **Optional**| service to call when channel button pressed
+| menu | `service` | **Optional**| service to call when menu button pressed
 | volume_up | `service` | **Optional**| service to call when volume up button pressed
 | volume_down | `service` | **Optional**| service to call when volume down button pressed
 | volume_mute | `service` | **Optional**| service to call when volume mute button pressed
-
+| reverse | `service` | **Optional**| service to call when reverse button pressed
+| play | `service` | **Optional**| service to call when play button pressed
+| forward | `service` | **Optional**| service to call when forward button pressed
 ## `service` Options
 | Name | Type | Requirement | Description
 | ---- | ---- | ------- | -----------
@@ -70,9 +71,9 @@ https://twitter.com/_developit/status/1090364879377260544
 Add this to your `HACS settings tab`:
 
 ```
-https://github.com/marrobHD/tv-card
+https://github.com/hung2kgithub/tv-card
 ```
-![example](https://i.imgur.com/2urg4m2.png)
+![example](https://github.com/hung2kgithub/tv-card/blob/master/tv-card_example.png)
 
 ### Step 1
 
@@ -81,8 +82,8 @@ Install `tv-card` by copying `tv-card.js` and `tv-card-editor.js` from this repo
 **Example:**
 
 ```bash
-wget https://raw.githubusercontent.com/marrobHD/tv-card/master/tv-card.js
-wget https://raw.githubusercontent.com/marrobHD/tv-card/master/tv-card-editor.js
+wget https://raw.githubusercontent.com/hung2kgithub/tv-card/master/tv-card.js
+wget https://raw.githubusercontent.com/hung2kgithub/tv-card/master/tv-card-editor.js
 mv tv-card* /config/www/
 ```
 
