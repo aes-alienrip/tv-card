@@ -145,7 +145,7 @@ class TVCardServices extends LitElement {
                           <ha-icon-button
                             .action="${"channelup"}"
                             @click="${this.handleActionClick}"
-                            icon="mdi:arrow-up-thick"
+                            icon="mdi:arrow-up-drop-circle"
                             title="Channel Up"
                           ></ha-icon-button>
                         `
@@ -165,7 +165,7 @@ class TVCardServices extends LitElement {
                           <ha-icon-button
                             .action="${"channeldown"}"
                             @click="${this.handleActionClick}"
-                            icon="mdi:arrow-down-thick"
+                            icon="mdi:arrow-down-drop-circle"
                             title="Channel Down"
                           ></ha-icon-button>
                         `
