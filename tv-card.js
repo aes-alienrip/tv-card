@@ -60,12 +60,7 @@ class TVCardServices extends LitElement {
             this._config.tv && this._config.power
               ? html`
                   <div class="row">
-                    <ha-icon-button
-                      .action="${"power"}"
-                      @click="${this.handleActionClick}"
-                      icon="mdi:power"
-                      title="Power"
-                    ></ha-icon-button>
+                    ${emptyButton}
                     ${emptyButton}
                     <ha-icon-button
                       .action="${"power"}"
@@ -151,7 +146,7 @@ class TVCardServices extends LitElement {
                             .action="${"channelup"}"
                             @click="${this.handleActionClick}"
                             icon="mdi:arrow-up-bold"
-                            title="Channelup"
+                            title="Channel Up"
                           ></ha-icon-button>
                         `
                       : emptyButton}
@@ -171,7 +166,7 @@ class TVCardServices extends LitElement {
                             .action="${"channeldown"}"
                             @click="${this.handleActionClick}"
                             icon="mdi:arrow-down-bold"
-                            title="Channeldown"
+                            title="Channel Down"
                           ></ha-icon-button>
                         `
                       : emptyButton}
@@ -218,6 +213,45 @@ class TVCardServices extends LitElement {
               title="Down"
             ></ha-icon-button>
           </div>
+
+          ${
+            this._config.setting || this._config.channel || this._config.menu
+              ? html`
+                  <div class="row">
+                    ${this._config.setting
+                      ? html`
+                          <ha-icon-button
+                            .action="${"setting"}"
+                            @click="${this.handleActionClick}"
+                            icon="mdi:cog"
+                            title="Setting"
+                          ></ha-icon-button>
+                        `
+                      : emptyButton}
+                    ${this._config.channel
+                      ? html`
+                          <ha-icon-button
+                            .action="${"channel"}"
+                            @click="${this.handleActionClick}"
+                            icon="mdi:format-list-numbered"
+                            title="Channel"
+                          ></ha-icon-button>
+                        `
+                      : emptyButton}
+                    ${this._config.menu
+                      ? html`
+                          <ha-icon-button
+                            .action="${"menu"}"
+                            @click="${this.handleActionClick}"
+                            icon="mdi:dots-vertical"
+                            title="Menu"
+                          ></ha-icon-button>
+                        `
+                      : emptyButton}
+                  </div>
+                `
+              : ""
+          }
 
           ${
             this._config.reverse || this._config.play || this._config.forward
@@ -356,7 +390,10 @@ class TVCardServices extends LitElement {
       "down",
       "reverse",
       "play",
-      "forward"
+      "forward",
+      "setting",
+      "channel",
+      "menu"
     ];
 
     if (
