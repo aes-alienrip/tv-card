@@ -1,6 +1,6 @@
 **Sample overview:**
 
-![Sample overview](https://github.com/marrobHD/tv-card/blob/master/KOLwmt1vGh.png)
+![Sample overview](https://github.com/hung2kgithub/tv-card/blob/master/tv-card_example.png)
 
 Add this to your lovelace configuration:
 
@@ -15,4 +15,4 @@ power:
     entity_id: switch.bedroom_tv_power
 ```
 
-Look at [README](https://github.com/marrobHD/tv-card/blob/master/README.md) for more information
+Look at [README](https://github.com/hung2kgithub/tv-card/blob/master/README.md) for more information
