@@ -20,7 +20,7 @@ This card is for [Lovelace](https://www.home-assistant.io/lovelace) on [Home Ass
 # NOTE: Firefox releases before 67 are not supported
 https://twitter.com/_developit/status/1090364879377260544
 
-![ex](KOLwmt1vGh.png)
+![ex](tv-card_example.png)
 
 ## Options
 
@@ -73,7 +73,7 @@ Add this to your `HACS settings tab`:
 ```
 https://github.com/hung2kgithub/tv-card
 ```
-![example](https://github.com/hung2kgithub/tv-card/blob/master/tv-card_example.png)
+![example](https://i.imgur.com/2urg4m2.png)
 
 ### Step 1
 
