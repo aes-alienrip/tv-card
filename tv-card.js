@@ -104,7 +104,7 @@ class TVCardServices extends LitElement {
                           <ha-icon-button
                             .action="${"back"}"
                             @click="${this.handleActionClick}"
-                            icon="mdi:arrow-left"
+                            icon="mdi:keyboard-return"
                             title="Back"
                           ></ha-icon-button>
                         `
