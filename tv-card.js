@@ -254,6 +254,36 @@ class TVCardServices extends LitElement {
           }
 
           ${
+            this._config.tv && (
+            this._config.volume_up ||
+            this._config.volume_down ||
+            this._config.volume_mute )
+              ? html`
+                  <div class="row">
+                    <ha-icon-button
+                      .action="${"volume_mute"}"
+                      @click="${this.handleActionClick}"
+                      icon="mdi:volume-mute"
+                      title="Volume Mute"
+                    ></ha-icon-button>
+                    <ha-icon-button
+                      .action="${"volume_down"}"
+                      @click="${this.handleActionClick}"
+                      icon="mdi:volume-minus"
+                      title="Volume Down"
+                    ></ha-icon-button>
+                    <ha-icon-button
+                      .action="${"volume_up"}"
+                      @click="${this.handleActionClick}"
+                      icon="mdi:volume-plus"
+                      title="Volume Up"
+                    ></ha-icon-button>
+                  </div>
+                `
+              : ""
+          }
+
+          ${
             this._config.reverse || this._config.play || this._config.forward
               ? html`
                   <div class="row">
@@ -292,35 +322,6 @@ class TVCardServices extends LitElement {
               : ""
           }
 
-          ${
-            this._config.tv && (
-            this._config.volume_up ||
-            this._config.volume_down ||
-            this._config.volume_mute )
-              ? html`
-                  <div class="row">
-                    <ha-icon-button
-                      .action="${"volume_mute"}"
-                      @click="${this.handleActionClick}"
-                      icon="mdi:volume-mute"
-                      title="Volume Mute"
-                    ></ha-icon-button>
-                    <ha-icon-button
-                      .action="${"volume_down"}"
-                      @click="${this.handleActionClick}"
-                      icon="mdi:volume-minus"
-                      title="Volume Down"
-                    ></ha-icon-button>
-                    <ha-icon-button
-                      .action="${"volume_up"}"
-                      @click="${this.handleActionClick}"
-                      icon="mdi:volume-plus"
-                      title="Volume Up"
-                    ></ha-icon-button>
-                  </div>
-                `
-              : ""
-          }
         </div>
       </ha-card>
     `;
