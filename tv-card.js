@@ -135,9 +135,10 @@ class TVCardServices extends LitElement {
           }
 
           ${
+            this._config.tv && (
             this._config.channelup ||
             this._config.info ||
-            this._config.channeldown
+            this._config.channeldown )
               ? html`
                   <div class="row">
                     ${this._config.channelup
@@ -254,10 +255,9 @@ class TVCardServices extends LitElement {
           }
 
           ${
-            this._config.tv && (
             this._config.volume_up ||
             this._config.volume_down ||
-            this._config.volume_mute )
+            this._config.volume_mute
               ? html`
                   <div class="row">
                     <ha-icon-button
