@@ -96,7 +96,7 @@ class TVCardServices extends LitElement {
           }
 
           ${
-            this._config.back || this._config.source || this._config.home
+            this._config.back || this._config.home || this._config.source
               ? html`
                   <div class="row">
                     ${this._config.back
@@ -109,16 +109,6 @@ class TVCardServices extends LitElement {
                           ></ha-icon-button>
                         `
                       : emptyButton}
-                    ${this._config.source
-                      ? html`
-                          <ha-icon-button
-                            .action="${"source"}"
-                            @click="${this.handleActionClick}"
-                            icon="mdi:import"
-                            title="Source"
-                          ></ha-icon-button>
-                        `
-                      : emptyButton}
                     ${this._config.home
                       ? html`
                           <ha-icon-button
@@ -126,6 +116,16 @@ class TVCardServices extends LitElement {
                             @click="${this.handleActionClick}"
                             icon="mdi:home"
                             title="Home"
+                          ></ha-icon-button>
+                        `
+                      : emptyButton}
+                    ${this._config.source
+                      ? html`
+                          <ha-icon-button
+                            .action="${"source"}"
+                            @click="${this.handleActionClick}"
+                            icon="mdi:import"
+                            title="Source"
                           ></ha-icon-button>
                         `
                       : emptyButton}
