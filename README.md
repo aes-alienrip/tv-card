@@ -1,5 +1,5 @@
 # TV Remote Card
-📺 [TV Remote Card](https://github.com/marrobHD/tv-card) editited by hung2kgithub
+📺 [TV Remote Card](https://github.com/marrobHD/tv-card) modified by aes-alienrip
 
 [![GitHub Release][releases-shield]][releases]
 [![License][license-shield]](LICENSE.md)
@@ -71,7 +71,7 @@ https://twitter.com/_developit/status/1090364879377260544
 Add this to your `HACS settings tab`:
 
 ```
-https://github.com/hung2kgithub/tv-card
+https://github.com/aes-alienrip/tv-card
 ```
 ![example](https://i.imgur.com/2urg4m2.png)
 
@@ -82,8 +82,8 @@ Install `tv-card` by copying `tv-card.js` and `tv-card-editor.js` from this repo
 **Example:**
 
 ```bash
-wget https://raw.githubusercontent.com/hung2kgithub/tv-card/master/tv-card.js
-wget https://raw.githubusercontent.com/hung2kgithub/tv-card/master/tv-card-editor.js
+wget https://raw.githubusercontent.com/aes-alienrip/tv-card/master/tv-card.js
+wget https://raw.githubusercontent.com/aes-alienrip/tv-card/master/tv-card-editor.js
 mv tv-card* /config/www/
 ```
 
